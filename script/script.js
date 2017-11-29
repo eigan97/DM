@@ -46,6 +46,7 @@ var fecha = dd+"/"+mm+"/"+yyyy;
 const numEdad = document.getElementById('numEdad');
 
 function registro(){
+    alert("aasdasdasd");
     const pass2 = passPassword2.value
     const auth = firebase.auth();
     alert(auth);
