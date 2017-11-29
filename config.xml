@@ -13,7 +13,7 @@
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
-        
+
     </author>
 
     <!--
@@ -71,7 +71,7 @@
         <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 
-    <!-- Define app icon for each platform. -->
+    <!-- Define app icon for each platformkjkj -->
     <icon src="res/icon/android/icon-36-ldpi.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
