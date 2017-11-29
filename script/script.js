@@ -283,6 +283,7 @@ function index(){
 
 }
 function carga1(){
+
 		var cargar= document.getElementById('cargar')
 		var inicio= document.getElementById('inicio')
 	setTimeout(function (){
@@ -351,7 +352,7 @@ function index(){
 	window.location.assign('app.html');
 
 }
-function carga1(){
+/*function carga1(){
 		var cargar= document.getElementById('cargar')
 		var inicio= document.getElementById('inicio')
 	setTimeout(function (){
@@ -364,11 +365,13 @@ inicio.style.left="0%";
 
 	}, 1000);
 
-}
+}*/
 
 function compruebacambio() {
+
 	var url = window.location.href
-   	if (url.includes("index")) {
+	
+   	if (url=="http://getjobis.hol.es/" ) {
    		carga1();
         //alert("Dirección ha cambiado"); 
         firebase.auth().signOut();
