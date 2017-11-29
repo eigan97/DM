@@ -286,7 +286,7 @@ function carga1(){
 		var cargar= document.getElementById('cargar')
 		var inicio= document.getElementById('inicio')
 	setTimeout(function (){
-
+        alert("aqui")
 		cargar.style.left="-100%";
 
 	}, 1000);
