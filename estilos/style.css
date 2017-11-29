@@ -15,7 +15,7 @@ lOADER
 }
 
 /* Loader (*/
-h1{
+/* h1{
 	width: 100%;
 	display: flex;
 		flex-wrap: wrap;
@@ -53,7 +53,7 @@ p,a{
 	animation: loading 1.2s infinite linear;
 	
 }
-
+ */
 /*
 lOADER
 */
@@ -71,7 +71,7 @@ lOADER
 	}
 	#inicio{
 		position: fixed;
-		left: 100%;
+		left: 0;
 		height: 100%;
 		width: 100%;
 		
