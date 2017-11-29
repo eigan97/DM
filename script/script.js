@@ -370,7 +370,7 @@ inicio.style.left="0%";
 function compruebacambio() {
 
 	var url = window.location.href
-	
+	alert('kajsdlkajsdlsd')
    	if (url=="http://getjobis.hol.es/" ) {
    		carga1();
         //alert("Dirección ha cambiado"); 
@@ -402,6 +402,7 @@ function inicio(){
 
 
 window.onload = function() { 
+	alert('Rewards')
 	compruebacambio();
 }
 
