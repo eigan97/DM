@@ -48,7 +48,7 @@ const numEdad = document.getElementById('numEdad');
 function registro(){
     const pass2 = passPassword2.value
     const auth = firebase.auth();
-
+    alert(auth);
     var email = txtEmail.value;
 	var edad = numEdad.value;
 	var nombre = txtNombre.value;
