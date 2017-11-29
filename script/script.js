@@ -351,7 +351,7 @@ function index(){
 	window.location.assign('app.html');
 
 }
-function carga1(){
+/*function carga1(){
 		var cargar= document.getElementById('cargar')
 		var inicio= document.getElementById('inicio')
 	setTimeout(function (){
@@ -364,7 +364,7 @@ inicio.style.left="0%";
 
 	}, 1000);
 
-}
+}*/
 
 function compruebacambio() {
 	var url = window.location.href
@@ -377,7 +377,7 @@ function compruebacambio() {
    	}
    	const email = localStorage.getItem("email");
    	if (email=="") {
-   		//window.location.assign('index.html');
+   		window.location.assign('index.html');
    	}
 }
 
@@ -398,9 +398,6 @@ function inicio(){
 }
 
 
-window.onload = function() { 
-	compruebacambio();
-}
 
 
 
