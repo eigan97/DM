@@ -401,11 +401,11 @@ function inicio(){
 }
 
 
-window.onload = function() { 
+/*window.onload = function() { 
 	alert('Rewards')
 	compruebacambio();
 }
-
+*/
 
 
 
