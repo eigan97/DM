@@ -282,20 +282,7 @@ function index(){
 	window.location.assign('app.html');
 
 }
-function carga1(){
-		var cargar= document.getElementById('cargar')
-		var inicio= document.getElementById('inicio')
-	setTimeout(function (){
-        alert("aqui")
-		cargar.style.left="-100%";
 
-	}, 1000);
-setTimeout(function (){
-inicio.style.left="0%";
-
-	}, 1000);
-
-}
 function guardarResE(){
 	//alert("puto");
     //
@@ -354,6 +341,7 @@ function index(){
 function carga1(){
 		var cargar= document.getElementById('cargar')
 		var inicio= document.getElementById('inicio')
+        alert("aqui")
 	setTimeout(function (){
 
 		cargar.style.left="-100%";
