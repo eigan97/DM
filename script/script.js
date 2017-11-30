@@ -3,7 +3,7 @@ Clave 1: 2edbc5884ac744f4aa2cd5d8ff591331
 
 Clave 2: b6072cdd5104463d87fbe320689d7e26
 */
-/*const config = {
+const config = {
     apiKey: "AIzaSyAiU6AeFLZPFowhernobmwFnc4ulZlgcwg",
     authDomain: "ejemplo-8c9f0.firebaseapp.com",
     databaseURL: "https://ejemplo-8c9f0.firebaseio.com",
@@ -13,7 +13,7 @@ Clave 2: b6072cdd5104463d87fbe320689d7e26
 };
 firebase.initializeApp(config);
 
-var Conect = firebase.database();*/
+var Conect = firebase.database();
 var userData = null;
 var resultData = null;
 let emailUse;
@@ -46,7 +46,7 @@ var fecha = dd+"/"+mm+"/"+yyyy;
 const numEdad = document.getElementById('numEdad');
 
 function registro(){
-    alert("aasdasdasd");/*
+    alert("aasdasdasd");
     const pass2 = passPassword2.value
     const auth = firebase.auth();
     alert(auth);
@@ -80,7 +80,7 @@ function registro(){
     }else{
         alert("Hacen falta datos");
         console.log(email+" "+edad+" "+nombre+" "+pass);
-    }*/
+    }
 	//
 }
 function continuar(){
