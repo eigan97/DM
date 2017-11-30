@@ -69,7 +69,7 @@
     <!--
         <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
-    <plugin name="cordova-plugin-firebase" spec="0.1.24" />
+    <!-- <plugin name="cordova-plugin-firebase" spec="0.1.24" /> -->
 
 
     <!-- Define app icon for each platform. -->
