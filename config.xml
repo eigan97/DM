@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.sor.emotion"
+        id        = "com.sor.emotions"
         version   = "1.0.0">
 
-    <name>SOR</name>
+    <name>Hello World</name>
 
     <description>
-        Hello World sample application thaewrt responds to the deviceready event.
+        Hello World sample application that responds to the deviceready event.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
@@ -43,7 +43,6 @@
     -->
 
     <!-- Plugins -->
-  
 
     <!-- Core plugins -->
     <plugin name="cordova-plugin-battery-status" />
@@ -64,16 +63,12 @@
     <plugin name="cordova-plugin-network-information" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-vibration" />
-    
-    
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
         <plugin name="com.phonegap.plugins.barcodescanner" />
     -->
-    
-    <!-- <plugin name="cordova-plugin-firebase" spec="0.1.24" /> -->
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
@@ -135,8 +130,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-   <!--  <platform name="android">
-       <resource-file src="google-services.json" target="/google-services.json" />
-   </platform> -->
 
 </widget>
