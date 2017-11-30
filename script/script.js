@@ -31,6 +31,7 @@ const txtUsername = document.getElementById('txtUsername');
 const passContraseña = document.getElementById('passContraseña');
 const spName = document.getElementById('spName'); 
 const mosCorreo = document.getElementById('mosCorreo');
+var pantalla = document.getElementById("bandera").value;
 var hoy = new Date();
 var dd = hoy.getDate();
 var mm = hoy.getMonth()+1; //hoy es 0!
@@ -46,10 +47,9 @@ var fecha = dd+"/"+mm+"/"+yyyy;
 const numEdad = document.getElementById('numEdad');
 
 function registro(){
-    alert("aasdasdasd");
     const pass2 = passPassword2.value
     const auth = firebase.auth();
-    alert(auth);
+
     var email = txtEmail.value;
 	var edad = numEdad.value;
 	var nombre = txtNombre.value;
@@ -368,11 +368,13 @@ inicio.style.left="0%";
 
 }*/
 
+console.log(pantalla);
 function compruebacambio() {
 
-	var url = window.location.href
-	alert('kajsdlkajsdlsd')
-   	if (url=="http://getjobis.hol.es/" ) {
+	
+    
+	
+   	if (pantalla=="index" ) {
    		carga1();
         //alert("Dirección ha cambiado"); 
         firebase.auth().signOut();
@@ -380,8 +382,8 @@ function compruebacambio() {
         localStorage.setItem("urlImage","")
    	}
    	const email = localStorage.getItem("email");
-   	if (email=="") {
-   		//window.location.assign('index.html');
+   	if (email=="" && pantalla!="index") {
+   		window.location.assign('index.html');
    	}
 }
 
@@ -402,11 +404,10 @@ function inicio(){
 }
 
 
-/*window.onload = function() { 
-	alert('Rewards')
+window.onload = function() { 
 	compruebacambio();
 }
-*/
+
 
 
 
@@ -416,8 +417,6 @@ function sesion(){
 	var pass = passContraseña.value;
 	const auth = firebase.auth();
 
-	localStorage.setItem("email",email);
-
 	const promise = auth.signInWithEmailAndPassword(email, pass);
 	promise.catch(e =>{
  		alert(e.message);
@@ -425,6 +424,7 @@ function sesion(){
 
 	promise.then(function(value){ 		
 		window.location.assign('perfil.html');
+        localStorage.setItem("email",email);
 	});
 }
 
@@ -740,10 +740,9 @@ function sesion(){
                 emailUse = id["email"];
                 edadUse = id["edad"];
 
-                var url = window.location.href
-			   	if (url.includes("app.html")) {
+			   	if (pantalla=="app") {
 			   		spName.innerHTML = nombreUse;
-			   	}else if(url.includes("perfil.html")){
+			   	}else if(pantalla=="perfil"){
 			   		spName.innerHTML = nombreUse;
 			   		mosCorreo.innerHTML = emailUse;
 					if (!localStorage.getItem('urlImage')) {

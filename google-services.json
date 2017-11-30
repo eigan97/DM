@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "245090948125",
+    "firebase_url": "https://ejemplo-8c9f0.firebaseio.com",
+    "project_id": "ejemplo-8c9f0",
+    "storage_bucket": "ejemplo-8c9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245090948125:android:7be302980594d86d",
+        "android_client_info": {
+          "package_name": "com.sor.emotion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245090948125-3kk5qji06pih94n6i26jneos4d6808to.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxQMk5QY4HoA3pnaDYBRz5OkdVNUds5so"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
